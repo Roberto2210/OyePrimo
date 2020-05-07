@@ -1,6 +1,6 @@
 const Advisers = require('../models/Advisers');
 
-module.exports = {
+module.exports = {  
   create: (body) => Advisers.create(body),
   find: () => Advisers.find({ is_active: true }),
   findById: (id) => Advisers.findById(id),

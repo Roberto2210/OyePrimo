@@ -6,6 +6,6 @@ module.exports = {
   findById: (id) => Advisers.findById(id),
   update: (adviser, body) => {
     Object.assign(adviser, body);
-    return user.save();
+    return adviser.save();
   },
 }
